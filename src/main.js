@@ -5,6 +5,8 @@ import Vuetify from 'vuetify'
 
 // css
 import 'vuetify/dist/vuetify.min.css'
+import '@/css/reset.scss'
+import '@/css/style.scss'
 
 Vue.use(Vuetify)
 

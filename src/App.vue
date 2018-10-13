@@ -1,23 +1,38 @@
 <template>
-  <div id="app">
-    <img src="./assets/logo.png">
-    <router-view/>
-  </div>
+  <v-app id="app">
+
+    <smb-aside />
+
+    <smb-header :is-main="hasMain" />
+
+    <v-content>
+      <v-container fluid>
+        <router-view />
+      </v-container>
+    </v-content>
+
+    <smb-footer />
+
+  </v-app>
 </template>
 
 <script>
+import SmbAside from '@/components/aside'
+import SmbHeader from '@/components/header'
+import SmbFooter from '@/components/footer'
+
 export default {
-  name: 'App'
+  name: 'App',
+  components: {
+    SmbAside, SmbHeader, SmbFooter
+  },
+  computed: {
+    hasMain() {
+      return this.$route.name === 'Main'
+    }
+  },
+  created() {
+    console.log(this.$route.name)
+  }
 }
 </script>
-
-<style>
-#app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
-</style>

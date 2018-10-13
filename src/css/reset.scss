@@ -1,0 +1,59 @@
+// font-face @production url: https://cdn.rawgit.com/spoqa/spoqa-han-sans/01ff0283/Subset/SpoqaHanSans
+@font-face {
+  font-family: 'Spoqa Han Sans';
+  font-weight: 700;
+  src: local('Spoqa Han Sans Bold'),
+  url('../fonts/SpoqaHanSansBold.woff2') format('woff2'),
+  url('../fonts/SpoqaHanSansBold.woff') format('woff'),
+  url('../fonts/SpoqaHanSansBold.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Spoqa Han Sans';
+  font-weight: 400;
+  src: local('Spoqa Han Sans Regular'),
+  url('../fonts/SpoqaHanSansRegular.woff2') format('woff2'),
+  url('../fonts/SpoqaHanSansRegular.woff') format('woff'),
+  url('../fonts/SpoqaHanSansRegular.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Spoqa Han Sans';
+  font-weight: 300;
+  src: local('Spoqa Han Sans Light'),
+  url('../fonts/SpoqaHanSansLight.woff2') format('woff2'),
+  url('../fonts/SpoqaHanSansLight.woff') format('woff'),
+  url('../fonts/SpoqaHanSansLight.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Spoqa Han Sans';
+  font-weight: 100;
+  src: local('Spoqa Han Sans Thin'),
+  url('../fonts/SpoqaHanSansThin.woff2') format('woff2'),
+  url('../fonts/SpoqaHanSansThin.woff') format('woff'),
+  url('../fonts/SpoqaHanSansThin.ttf') format('truetype');
+}
+
+* { font-family: 'Spoqa Han Sans', 'Sans-serif'; }
+
+:root {
+  --black: #000000;
+  --greyish-brown: #4a4a4a;
+  --brownish-grey: #666666;
+  --brownish-grey-two: #757575;
+  --brown-grey: #9b9b9b;
+  --very-light-pink: #bbbbbb;
+  --very-light-pink-five: #f2f2f2;
+  --charcoal-grey: #323547;
+  --brown-grey-two: #979797;
+  --brown-grey-three: #8c8c8c;
+  --very-light-pink-four: #d9d9d9;
+  --scarlet: #d0021b;
+  --salmon: #f18681;
+  --very-light-pink-three: #fdeded;
+  --white: #fbfbfb;
+  --white-two: #ffffff;
+  --very-light-pink-two: #d8d8d8;
+  --dandelion-90: rgba(255, 224, 11, .9);
+}
