@@ -6,12 +6,15 @@
     <smb-header :is-main="hasMain" />
 
     <v-content>
-      <v-container fluid>
+      <v-container fluid pa-0>
         <router-view />
       </v-container>
     </v-content>
 
     <smb-footer />
+
+    <!-- popup anchor -->
+    <popup-anchor/>
 
   </v-app>
 </template>
@@ -30,9 +33,6 @@ export default {
     hasMain() {
       return this.$route.name === 'Main'
     }
-  },
-  created() {
-    console.log(this.$route.name)
   }
 }
 </script>

@@ -1,6 +1,6 @@
 <template>
   <v-navigation-drawer
-    v-model="drawer"
+    v-model="sidebar"
     class="smb-aside"
     absolute
     temporary
@@ -27,9 +27,9 @@
 
 <script>
 export default {
+  name: 'Aside',
   data() {
     return {
-      drawer: true,
       items: [
         { title: '홈', active: false, path: '/' },
         { title: '이용 이력', active: true, path: '/' },
@@ -39,6 +39,17 @@ export default {
         { title: '메뉴', active: false, path: '/' },
         { title: '매장', active: false, path: '/' }
       ]
+    }
+  },
+  computed: {
+    sidebar: {
+      get() {
+        return this.$store.getters.getSidebar
+      },
+      set(val) {
+        if (val === true) return
+        this.$store.commit('TOGGLE_SIDEBAR')
+      }
     }
   }
 }

@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="22" height="22" viewBox="0 0 22 22">
+    <defs>
+        <path id="a" d="M5.002 5.25h6"/>
+    </defs>
+    <g fill="none" fill-rule="nonzero" stroke="#E9AF00" stroke-width="2">
+        <g transform="translate(3 2)">
+            <rect width="14" height="16" x="1.002" y="1" rx="2"/>
+            <use stroke-linecap="round" xlink:href="#a"/>
+            <path stroke-linecap="round" d="M5.002 9.208h6"/>
+        </g>
+        <path d="M12.476 14.527c.25-.038.6-.145 1.033-.326l7.445-7.445-.707-.707-7.445 7.444c-.181.434-.288.783-.326 1.034z"/>
+    </g>
+</svg>

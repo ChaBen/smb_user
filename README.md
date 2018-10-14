@@ -18,4 +18,24 @@ npm run build
 npm run build --report
 ```
 
-For a detailed explanation on how things work, check out the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).
+## Eslint
+vscode 저장시 자동 eslint fix 해주기
+vscode 사용자 설정에 아래부분추가
+```javascript
+"files.autoSave": "off",
+"eslint.validate": [
+  "javascript",
+  "javascriptreact",
+  "vue-html",
+  {
+  "language": "vue",
+  "autoFix": true
+  }
+],
+"eslint.run": "onSave",
+"eslint.autoFixOnSave": true,
+"emmet.includeLanguages": {
+  "vue-html": "html",
+  "vue": "html"
+}
+```
