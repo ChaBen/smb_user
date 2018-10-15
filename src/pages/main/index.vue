@@ -33,6 +33,7 @@ export default {
   name: 'Main',
   data() {
     return {
+      dialog: false,
       mainList: [
         // { title: '지금 바로 예약하실 수 있습니다!', avatar: '예약하기', path: '', whether: true },
         { title: '곧 식사하실 예정이세요?', avatar: '대기표받기', path: '', whether: true },

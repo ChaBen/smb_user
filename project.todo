@@ -1,5 +1,11 @@
 smb_user:
   공통:
-    ☐ header @120m @started(18-10-13 21:24)
-    ✔ footer @done(18-10-13 20:12)
-    ✔ aside @done(18-10-13 20:12)
+    ☐ 알림1
+    ☐ 알림2
+    ☐ 알림3
+    ☐ 알림4
+    ✔ 공유하기 @done(18-10-15 23:05)
+    이슈:
+      ✔ popupmngr 팝업매니저가 없어도 가능하다? @done(18-10-15 23:04)
+      ☐ md-eslint install
+      ☐ jsconfig.json

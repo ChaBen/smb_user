@@ -7,19 +7,21 @@
       <v-spacer />
       <v-toolbar-items class="header-toolbar">
         <!-- @click="linkEvent(item.event)" -->
-        <v-btn v-for="item in headMenu" :key="item.title" :to="item.path" flat><img :src="`/static/icons/${item.icon}.svg`" alt="">{{ item.title }}</v-btn>
+        <v-btn v-for="item in headMenu" :key="item.title" :to="item.path" flat @click="linkEvent(item.event)"><img :src="`/static/icons/${item.icon}.svg`" alt="">{{ item.title }}</v-btn>
       </v-toolbar-items>
     </v-toolbar>
 
     <header class="main-header">
       <div class="main-title">안녕하세요,<br>울프강 스테이크 하우스<br>입니다.</div>
-      <v-layout row justify-space-between class="main-menu">
+      <v-layout row justify-space-around class="main-menu">
         <router-link v-for="item in mainMenu" :key="item.title" :to="item.path" class="menu-item">
           <div class="item-img"><img :src="`/static/icons/main-menu-${item.icon}.svg`" :alt="item.title"></div>
           <div class="item-title">{{ item.title }}</div>
         </router-link>
       </v-layout>
     </header>
+
+    <share-popup :dialog.sync="dialog" />
   </div>
 </template>
 
@@ -28,6 +30,9 @@ import SharePopup from '@/components/popups/share'
 
 export default {
   name: 'Header',
+  components: {
+    SharePopup
+  },
   props: {
     isMain: {
       type: Boolean,
@@ -36,6 +41,7 @@ export default {
   },
   data() {
     return {
+      dialog: false,
       headMenu: [
         { title: '대기', icon: 'waiting', path: '/1', event: 'waiting' },
         { title: '예약', icon: 'reser', path: '/', event: 'reser' },
@@ -55,9 +61,7 @@ export default {
     linkEvent(event) {
       switch (event) {
         case 'share':
-          this.$popupManager.open(SharePopup).promise.then(res => {
-            console.log(res)
-          })
+          this.dialog = true
           break
 
         default:
