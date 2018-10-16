@@ -22,16 +22,18 @@
     </header>
 
     <share-popup :dialog.sync="dialog" />
+    <notice-popup :dialog.sync="dialog1" />
   </div>
 </template>
 
 <script>
-import SharePopup from '@/components/popups/share'
+import SharePopup from '@/components/popups/common/share'
+import NoticePopup from '@/components/popups/common/notice4'
 
 export default {
   name: 'Header',
   components: {
-    SharePopup
+    SharePopup, NoticePopup
   },
   props: {
     isMain: {
@@ -42,6 +44,7 @@ export default {
   data() {
     return {
       dialog: false,
+      dialog1: false,
       headMenu: [
         { title: '대기', icon: 'waiting', path: '/1', event: 'waiting' },
         { title: '예약', icon: 'reser', path: '/', event: 'reser' },
@@ -63,7 +66,9 @@ export default {
         case 'share':
           this.dialog = true
           break
-
+        case 'reser':
+          this.dialog1 = true
+          break
         default:
           break
       }

@@ -104,6 +104,7 @@
   border-radius: 6px;
 }
 .smb-dialog {
+  position: relative;
   .v-toolbar {
     background-color: var(--off-yellow) !important;
     .v-toolbar__title {
@@ -130,6 +131,12 @@
 .dialog-content {
   padding: 10px;
   background-color: var(--white-two);
+  .notice-title {
+    font-size: 16px;
+    margin-bottom: 10px;
+    color: var(--greyish-brown);
+    text-align: center;
+  }
   .share-box {
     padding: 20px;
     border-radius: 6px;
@@ -169,14 +176,161 @@
           font-weight: 800;
           color: var(--brownish-grey-three);
         }
-        .v-btn {
-          min-width: 80px;
-          height: 44px;
-          font-size: 14px;
-          color: var(--white-two);
-          border-radius: 3px;
-          background-color: var(--slate-grey);
+      }
+    }
+    .waiting-title {
+      font-size: 18px;
+      line-height: 27px;
+      font-weight: 800;
+      text-align: center;
+      color: var(--very-light-pink);
+    }
+    .waiting-number {
+      font-size: 120px;
+      line-height: 110px;
+      text-align: center;
+      color: var(--black);
+    }
+    .waiting-cont {
+      border-top: solid 1px var(--very-light-pink-four);
+      padding-top: 20px;
+      margin-top: 20px;
+      text-align: center;
+      .wai-tit {
+        font-size: 12px;
+        line-height: 18px;
+        font-weight: 800;
+        color: var(--very-light-pink);
+      }
+      .wai-team {
+        font-size: 24px;
+        line-height: 36px;
+        font-weight: 800;
+        margin-top: 8px;
+        color: var(--black);
+      }
+      .wai-date {
+        font-size: 24px;
+        line-height: 36px;
+        font-weight: 800;
+        margin-top: 8px;
+        color: var(--salmon);
+      }
+    }
+    .info-dt {
+      line-height: 24px;
+      font-size: 16px;
+      font-weight: 800;
+      color: var(--black);
+      &.normal {
+        font-weight: normal;
+      }
+    }
+    .info-dd {
+      height: 18px;
+      line-height: 18px;
+      font-size: 12px;
+      color: var(--very-light-pink);
+      text-align: right;
+    }
+    .order-cont {
+      margin-top: 14px;
+      padding-top: 13px;
+      border-top: 1px solid var(--very-light-pink-two);
+      .order-title {
+        font-size: 12px;
+        line-height: 18px;
+        font-weight: 800;
+        color: var(--black);
+      }
+      .order-label {
+        line-height: 18px;
+        font-size: 12px;
+        color: var(--black);
+      }
+      .order-length {
+        line-height: 18px;
+        font-size: 12px;
+        color: var(--black);
+        text-align: right;
+      }
+      .order-price {
+        width: 100%;
+        line-height: 18px;
+        font-size: 12px;
+        color: var(--black);
+        text-align: right;
+      }
+    }
+    .receipt-title {
+      line-height: 27px;
+      font-size: 18px;
+      font-weight: 800;
+      color: var(--black);
+      text-align: center;
+      &.regular {
+        font-weight: normal;
+        font-size: 16px;
+      }
+    }
+    .receipt-cont {
+      margin-top: 20px;
+      border-top: solid 1px var(--very-light-pink-four);
+      padding-top: 10px;
+      &.normal {
+        border-top: 0;
+        margin-top: 0;
+        padding-bottom: 10px;
+        border-bottom: solid 1px var(--very-light-pink-four);
+      }
+    }
+    .basic-table {
+      margin-top: 10px;
+      thead {
+        tr {
+          height: 26px;
         }
+        th {
+          line-height: 18px;
+          padding: 4px 0;
+          margin: 0;
+          border-top: solid 1px var(--very-light-pink-four);
+        }
+      }
+      tbody {
+        tr {
+          border-bottom: 0;
+        }
+        td {
+          padding: 10px 0;
+        }
+      }
+      tfoot {
+        tr {
+          height: auto;
+          border-top: 0;
+          border-bottom: solid 1px var(--very-light-pink-four);
+        }
+        td {
+          padding: 10px 0;
+          font-size: 12px;
+          line-height: 18px;
+          font-weight: 800;
+          color: var(--black);
+        }
+      }
+    }
+    .receipt-box {
+      margin: 20px 0;
+      line-height: 0;
+      .qr-img {
+        text-align: center;
+      }
+      .qr-code {
+        font-size: 12px;
+        line-height: 18px;
+        color: var(--black);
+        text-align: center;
       }
     }
   }

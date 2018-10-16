@@ -22,7 +22,7 @@
               </v-list-tile-content>
 
               <v-list-tile-action width="80">
-                <v-btn>URL 복사</v-btn>
+                <v-btn class="smb-btn">URL 복사</v-btn>
               </v-list-tile-action>
             </v-list-tile>
           </v-list>
