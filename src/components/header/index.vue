@@ -1,17 +1,16 @@
 <template>
   <div>
-    <v-toolbar :height="56" :class="{ 'main': isMain }" class="smb-header">
+    <v-toolbar :height="56" :class="{ 'main': isMain }" :fixed="!isMain" class="smb-header">
       <v-btn flat icon @click="toogleSidebar">
         <img src="/static/icons/side.svg" alt="">
       </v-btn>
       <v-spacer />
       <v-toolbar-items class="header-toolbar">
-        <!-- @click="linkEvent(item.event)" -->
         <v-btn v-for="item in headMenu" :key="item.title" :to="item.path" flat @click="linkEvent(item.event)"><img :src="`/static/icons/${item.icon}.svg`" alt="">{{ item.title }}</v-btn>
       </v-toolbar-items>
     </v-toolbar>
 
-    <header class="main-header">
+    <header v-if="isMain" class="main-header">
       <div class="main-title">안녕하세요,<br>울프강 스테이크 하우스<br>입니다.</div>
       <v-layout row justify-space-around class="main-menu">
         <router-link v-for="item in mainMenu" :key="item.title" :to="item.path" class="menu-item">
@@ -28,7 +27,7 @@
 
 <script>
 import SharePopup from '@/components/popups/common/share'
-import NoticePopup from '@/components/popups/common/notice4'
+import NoticePopup from '@/components/popups/common/notice'
 
 export default {
   name: 'Header',
@@ -46,9 +45,9 @@ export default {
       dialog: false,
       dialog1: false,
       headMenu: [
-        { title: '대기', icon: 'waiting', path: '/1', event: 'waiting' },
-        { title: '예약', icon: 'reser', path: '/', event: 'reser' },
-        { title: '공유', icon: 'share', path: '/', event: 'share' }
+        { title: '대기', icon: 'waiting', path: '/standby' },
+        { title: '예약', icon: 'reser', event: 'reser' },
+        { title: '공유', icon: 'share', event: 'share' }
       ],
       mainMenu: [
         { title: '이용 이력', icon: 'list', path: '' },
