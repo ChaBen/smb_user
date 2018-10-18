@@ -1,3 +1,10 @@
+이슈:
+  ✔ popupmngr 팝업매니저가 없어도 가능하다? @done(18-10-15 23:04)
+  ☐ md-eslint install
+  ☐ jsconfig.json
+  ☐ zeplin 에 import 안된 이미지들이 많음
+  ☐ v-form input error시 어떻게 표현할지 현재 input 디자인 위아래붙어있는 상황이라서 vuetify식 error표현이 안됨
+  ☐ 레이어 팝업, 풀팝업 타이틀(고정되여야하는지), footer(있어야하는지) 타이틀 고정아닐경우 닫기 버튼이 안보임
 smb_user:
   00-공통:
     ✔ 알림1 @done(18-10-16 22:18)
@@ -13,12 +20,12 @@ smb_user:
     ✔ 5 @done(18-10-15 23:05)
     ✔ 6 @done(18-10-15 23:05)
   02-대기:
-    ✔ 1 @done(18-10-17 22:31)
-    ✔ 2 @done(18-10-17 22:31)
-    ✔ 3 @done(18-10-17 22:31)
-    ✔ 4 @done(18-10-17 22:31)
-    ✔ 5 @done(18-10-17 22:31)
-    ☐ 6 공통 input 만들기 @60m
+    ✔ 1 path: '/standby'  @done(18-10-17 22:31)
+    ✔ 2 path: '/standby'  @done(18-10-17 22:31)
+    ✔ 3 path: '/standby'  @done(18-10-17 22:31)
+    ✔ 4 path: '/standby'  @done(18-10-17 22:31)
+    ✔ 5 path: '/standby'  @done(18-10-17 22:31)
+    ✔ 6 path: '/standby' 공통 input 5 @error @60m @done(18-10-18 21:47)
   03-예약:
     ☐ 1
     ☐ 2
@@ -66,9 +73,3 @@ smb_user:
     ☐ 3
     ☐ 4
     ☐ 5
-이슈:
-  ✔ popupmngr 팝업매니저가 없어도 가능하다? @done(18-10-15 23:04)
-  ☐ md-eslint install
-  ☐ jsconfig.json
-  ☐ 팝업이 스크롤시 타이틀이 고정안됨, 이로인해 닫기 버튼이 안보여짐
-  ☐ zeplin 에 import 안된 이미지들이 많음

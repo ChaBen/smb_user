@@ -32,16 +32,23 @@
     <div class="goods-title">미리 주문해보세요!</div>
     <div class="goods-text">매장에 오시면 빠르게 식사하실 수 있습니다.</div>
     <div class="page-lay">
-      <v-btn class="page-btn">주문하기</v-btn>
+      <v-btn class="page-btn" @click="dialog = true">주문하기</v-btn>
     </div>
+    <standby-pop :dialog.sync="dialog"/>
   </div>
 </template>
 
 <script>
+import StandbyPop from '@/components/popups/standby'
+
 export default {
   name: 'Standby',
+  components: {
+    StandbyPop
+  },
   data() {
     return {
+      dialog: false,
       lists: [
         { title: "'울프강 스테이크 샌드위치' 외 2개", date: '2018.07.20(토)' },
         { title: "샌드위치 '울프강 스테이크' 외 6개", date: '2018.04.20(월)' }
