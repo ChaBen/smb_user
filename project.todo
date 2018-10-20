@@ -5,29 +5,30 @@
   ☐ zeplin 에 import 안된 이미지들이 많음
   ☐ v-form input error시 어떻게 표현할지 현재 input 디자인 위아래붙어있는 상황이라서 vuetify식 error표현이 안됨
   ☐ 레이어 팝업, 풀팝업 타이틀(고정되여야하는지), footer(있어야하는지) 타이틀 고정아닐경우 닫기 버튼이 안보임
+  ✔ alt+click path - default path: @file://Users//chabin/Documents @done(18-10-21 03:45)
 smb_user:
   00-공통:
-    ✔ 알림1 @done(18-10-16 22:18)
-    ✔ 알림2 @done(18-10-16 22:18)
-    ✔ 알림3 @done(18-10-16 22:18)
-    ✔ 알림4 @done(18-10-16 22:18)
+    ✔ 알림1 @/components/popups/common/notice.vue @done(18-10-16 22:18)
+    ✔ 알림2 @/components/popups/common/notice.vue @done(18-10-16 22:18)
+    ✔ 알림3 @/components/popups/common/notice.vue @done(18-10-16 22:18)
+    ✔ 알림4 @/components/popups/common/notice.vue @done(18-10-16 22:18)
     ✔ 공유하기 @done(18-10-15 23:05)
   01-메인:
-    ✔ 1 @done(18-10-15 23:05)
+    ✔ 1 path: @/main/index.vue @done(18-10-15 23:05)
     ✔ 2 @done(18-10-15 23:05)
     ✔ 3 @done(18-10-15 23:05)
     ✔ 4 @done(18-10-15 23:05)
     ✔ 5 @done(18-10-15 23:05)
     ✔ 6 @done(18-10-15 23:05)
   02-대기:
-    ✔ 1 path: '/standby'  @done(18-10-17 22:31)
-    ✔ 2 path: '/standby'  @done(18-10-17 22:31)
-    ✔ 3 path: '/standby'  @done(18-10-17 22:31)
-    ✔ 4 path: '/standby'  @done(18-10-17 22:31)
-    ✔ 5 path: '/standby'  @done(18-10-17 22:31)
-    ✔ 6 path: '/standby' 공통 input 5 @error @60m @done(18-10-18 21:47)
+    ✔ 1 path: @/standby/index.vue @done(18-10-17 22:31)
+    ✔ 2 path ~  @done(18-10-17 22:31)
+    ✔ 3 path ~  @done(18-10-17 22:31)
+    ✔ 4 path ~  @done(18-10-17 22:31)
+    ✔ 5 path ~  @done(18-10-17 22:31)
+    ✔ 6 path ~ 공통 input 5 @error @60m @done(18-10-18 21:47)
   03-예약:
-    ☐ 1
+    ✔ 1 path: @/reservation/index.vue @done(18-10-21 03:45)
     ☐ 2
     ☐ 3
     ☐ 4

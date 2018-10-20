@@ -26,7 +26,7 @@
               </v-layout>
             </v-flex>
           </v-layout>
-          <v-btn class="smb-btn full">주문하기</v-btn>
+          <v-btn class="smb-btn" block>주문하기</v-btn>
         </div>
       </div>
     </v-card>

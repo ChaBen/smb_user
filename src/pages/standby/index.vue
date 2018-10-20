@@ -19,7 +19,7 @@
           </v-layout>
         </v-flex>
       </v-layout>
-      <v-btn class="smb-btn full">대기 취소</v-btn>
+      <v-btn class="smb-btn" block>대기 취소</v-btn>
     </div>
     <v-list class="standby-list">
       <v-list-tile-content v-for="item in lists" :key="item.title" @click="listClick">

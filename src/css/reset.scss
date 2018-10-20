@@ -72,8 +72,15 @@
     color: var(--white-two);
     border-radius: 3px;
     background-color: var(--slate-grey);
-    &.full {
-      width: 100%;
+  }
+  .page-lay {
+    margin: 0 -20px;
+    &.fixed {
+      margin: 0;
+      position: absolute;
+      right: 0;
+      bottom: 0;
+      left: 0;
     }
   }
   .page-btn {
@@ -85,45 +92,20 @@
     font-weight: 800;
     font-size: 16px;
     background-color: var(--off-yellow);
+    &.grey {
+      color: var(--white-two) !important;
+      background-color: var(--slate-grey) !important;
+    }
+    &.v-btn--disabled {
+      color: rgba(0, 0, 0, .26) !important;
+      background-color: rgba(0, 0, 0, .12) !important;
+    }
   }
-  // smb-input
-  .smb-input {
-    margin: 0 0 10px 0;
-    padding: 0;
-    &.v-input--is-focused {
-      .v-input__slot {
-        border: solid 2px rgba(109, 109, 109, 1);
-      }
-    }
-    .v-input__slot {
-      height: 58px;
-      border-radius: 6px;
-      border: solid 2px rgba(109, 109, 109, .4);
-      background-color: var(--white-two);
-      padding: 0 14px;
-      margin: 0;
-      transition: border-color .3s cubic-bezier(.25, .8, .5, 1);
-      &:before {
-        display: none;
-      }
-      &:after {
-        display: none;
-      }
-      input {
-        line-height: 24px;
-        padding: 0;
-        font-size: 16px;
-        color: var(--black) !important;
-        caret-color: var(--black) !important;
-      }
-      .v-label {
-        display: none;
-      }
-    }
-    .v-text-field__details {
-      .v-messages {
-        min-height: 0;
-      }
+  .tip {
+    font-size: 12px;
+    color: var(--brownish-grey);
+    .scar {
+      color: var(--scarlet);
     }
   }
 }

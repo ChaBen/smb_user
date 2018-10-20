@@ -20,16 +20,16 @@
           <div class="preview-text">※ 예상 대기 시간은 매장 상황에 따라 변동될 수 있습니다.</div>
           <v-layout row wrap>
             <v-flex>
-              <v-text-field v-model="form.name" placeholder="이름" class="smb-input" />
+              <v-text-field v-model="form.name" outline label="이름" class="smb-input" />
             </v-flex>
             <v-flex>
-              <v-text-field v-model="form.phone" placeholder="전화번호" class="smb-input" />
+              <v-text-field v-model="form.phone" outline label="전화번호" class="smb-input" />
             </v-flex>
             <v-flex xs6 style="padding-right: 5px;">
-              <v-text-field v-model="form.adult" placeholder="성인" class="smb-input" />
+              <v-text-field v-model="form.adult" outline label="성인" class="smb-input" />
             </v-flex>
             <v-flex xs6 style="padding-left: 5px;">
-              <v-text-field v-model="form.child" placeholder="유아" class="smb-input" />
+              <v-text-field v-model="form.child" outline label="유아" class="smb-input" />
             </v-flex>
           </v-layout>
           <div class="page-lay fixed">
