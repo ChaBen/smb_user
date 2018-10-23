@@ -72,6 +72,77 @@
     color: var(--white-two);
     border-radius: 3px;
     background-color: var(--slate-grey);
+    &.v-btn--small {
+      min-width: 68px;
+      height: 28px;
+      line-height: 28px;
+      font-size: 13px;
+    }
+  }
+  .smb-input {
+    &.v-input--selection-controls {
+      padding-top: 0;
+      margin-top: 0;
+    }
+    .v-input__slot {
+      margin-bottom: 0;
+      .v-label {
+        font-size: 14px;
+      }
+    }
+    .v-messages {
+      min-height: 0;
+    }
+    .v-text-field__details {
+      min-height: 0;
+    }
+  }
+  .smb-radio {
+    .v-input__slot {
+      margin-bottom: 0;
+    }
+    .v-messages {
+      min-height: 0;
+    }
+    &.three {
+      .v-radio {
+        flex: 1 33%;
+        margin-right: 0;
+        margin-bottom: 10px;
+      }
+    }
+    .v-radio {
+      margin-bottom: 0;
+    }
+  }
+  .smb-round {
+    margin-top: -10px;
+    .v-radio {
+      flex: 1 33%;
+      margin-right: 0;
+      margin-top: 10px;
+    }
+    .v-messages {
+      min-height: 0;
+    }
+    .v-input__slot {
+      margin-bottom: 0;
+    }
+  }
+  .smb-textarea {
+    .v-messages {
+      min-height: 0;
+    }
+    .v-input__slot {
+      margin-bottom: 0;
+    }
+  }
+  .smb-template {
+    height: 90px;
+    background-color: var(--very-light-pink-two);
+    font-size: 12px;
+    font-weight: 800;
+    color: var(--white-two);
   }
   .page-lay {
     margin: 0 -20px;

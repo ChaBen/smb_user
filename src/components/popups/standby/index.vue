@@ -19,10 +19,10 @@
           </v-layout>
           <div class="preview-text">※ 예상 대기 시간은 매장 상황에 따라 변동될 수 있습니다.</div>
           <v-layout row wrap>
-            <v-flex>
+            <v-flex style="margin-bottom: 10px;">
               <v-text-field v-model="form.name" outline label="이름" class="smb-input" />
             </v-flex>
-            <v-flex>
+            <v-flex style="margin-bottom: 10px;">
               <v-text-field v-model="form.phone" outline label="전화번호" class="smb-input" />
             </v-flex>
             <v-flex xs6 style="padding-right: 5px;">
@@ -52,12 +52,7 @@ export default {
   data() {
     return {
       isDialog: false,
-      form: {
-        name: null,
-        phone: null,
-        adult: null,
-        child: null
-      }
+      form: {}
     }
   },
   computed: {

@@ -27,7 +27,7 @@
 
 <script>
 import SharePopup from '@/components/popups/common/share'
-import NoticePopup from '@/components/popups/common/notice'
+import NoticePopup from '@/components/popups/common/notice2'
 
 export default {
   name: 'Header',
