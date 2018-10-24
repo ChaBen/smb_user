@@ -177,24 +177,33 @@
 .full-standby-payment {
   background-color: var(--charcoal-grey);
   position: relative;
-  .payment-info {
-    margin: 0 20px 30px 20px;
-    padding: 20px;
-    border-radius: 6px;
-    background-color: var(--white-two);
-    .flex {
-      font-size: 16px;
-      color: var(--black);
-      &:nth-child(even) {
-        font-size: 12px;
-        height: 18px;
-        font-size: 12px;
-        color: var(--very-light-pink);
-        margin-top: 1px;
-      }
-      &.bold {
-        font-weight: 800;
-      }
+}
+.payment-info {
+  margin: 0 20px 30px 20px;
+  padding: 20px;
+  border-radius: 6px;
+  background-color: var(--white-two);
+  &.normal {
+    margin: 0;
+    padding: 8px 0;
+    border-radius: 0;
+  }
+  &.bm1 {
+    border-bottom: 1px solid var(--very-light-pink-two);
+  }
+  .flex {
+    font-size: 16px;
+    line-height: 24px;
+    color: var(--black);
+    &:nth-child(even) {
+      font-size: 12px;
+      height: 18px;
+      font-size: 12px;
+      color: var(--very-light-pink);
+      margin-top: 1px;
+    }
+    &.bold {
+      font-weight: 800;
     }
   }
 }
@@ -703,6 +712,12 @@
       color: var(--greyish-brown);
       text-align: center;
       border-bottom: 1px solid var(--very-light-pink-two);
+      &.bm0 {
+        border-bottom: 0;
+      }
+      &.mt-20 {
+        margin-top: 20px;
+      }
     }
     .payment-price {
       padding: 6px 0;
@@ -727,6 +742,21 @@
       .value {
         text-align: right;
       }
+    }
+  }
+  .complete-title {
+    font-size: 18px;
+    font-weight: 800;
+    line-height: 27px;
+    color: var(--black);
+    padding-bottom: 20px;
+    border-bottom: 1px solid var(--very-light-pink-two);
+    text-align: center;
+    p {
+      font-size: 16px;
+      font-weight: normal;
+      line-height: 24px;
+      margin-bottom: 0;
     }
   }
 }

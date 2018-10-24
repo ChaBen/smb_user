@@ -37,7 +37,7 @@
 </template>
 
 <script>
-import ReservationPop from '@/components/popups/reservation/payment'
+import ReservationPop from '@/components/popups/reservation/complete'
 
 export default {
   components: {
