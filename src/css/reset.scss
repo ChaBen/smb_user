@@ -185,6 +185,15 @@
   .mb-20 {
     margin-bottom: 20px;
   }
+  .mt-10 {
+    margin-top: 10px;
+  }
+  .pt-20 {
+    padding-top: 20px;
+  }
+  .pb-20 {
+    padding-bottom: 20px;
+  }
   .smb-title {
     font-size: 16px;
     font-weight: 800;
@@ -199,5 +208,13 @@
     text-align: center;
     color: var(--greyish-brown);
     margin-bottom: 0;
+  }
+  .smb-txt {
+    font-size: 12px;
+    line-height: 20px;
+    color: var(--brownish-grey);
+  }
+  .bm1 {
+    border-bottom: solid 1px var(--very-light-pink-four);
   }
 }

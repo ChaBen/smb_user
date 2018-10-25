@@ -5,6 +5,7 @@
   ☐ zeplin 에 import 안된 이미지들이 많음
   ☐ v-form input error시 어떻게 표현할지 현재 input 디자인 위아래붙어있는 상황이라서 vuetify식 error표현이 안됨
   ☐ 레이어 팝업, 풀팝업일 경우 타이틀(고정되여야하는지), footer(있어야하는지) 타이틀 고정아닐경우 닫기 버튼이 안보임
+  ☐ 기회서가 없으므로 페이지 라우팅 작업이 안된다 레이어 팝업인지 페이지인지 구분하기 어렵다
 smb_user:
   00-공통:
     ✔ 알림1 @/components/popups/common/notice.vue @done(18-10-16 22:18)
@@ -36,10 +37,10 @@ smb_user:
     ☐ 7 Vuetify Chips @4h
     ✔ 8 path: @/components/popups/common/reservation/payment.vue @done(18-10-24 23:07)
   04-주문:
-    ☐ 1
-    ☐ 2
-    ☐ 3
-    ☐ 4
+    ✔ 1 path: @/components/popups/common/order/index.vue @done(18-10-25 22:42)
+    ✔ 2 path: @/components/popups/common/order/order-list.vue @done(18-10-25 22:42)
+    ✔ 3 path: @/components/popups/common/order/order-list.vue @done(18-10-25 22:42)
+    ✔ 4 path: @/components/popups/common/order/order-list.vue @done(18-10-25 22:42)
     ☐ 5
     ☐ 6
     ☐ 7

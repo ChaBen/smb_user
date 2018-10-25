@@ -29,6 +29,7 @@ export default {
         { title: '홈', name: 'Main', path: '/' },
         { title: '이용 이력', name: '', path: '/' },
         { title: '예약', name: 'Reservation', path: '/reservation' },
+        { title: '주문', name: 'Order', path: '/order' }, // 임시?
         { title: '대기', name: 'Standby', path: '/standby' },
         { title: '포장', name: '', path: '/' },
         { title: '메뉴', name: '', path: '/' },

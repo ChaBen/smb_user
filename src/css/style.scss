@@ -607,6 +607,9 @@
     font-weight: 800;
     color: var(--very-light-pink);
     text-align: center;
+    &.gray {
+      color: var(--greyish-brown);
+    }
   }
   .waiting-number {
     font-size: 120px;
@@ -757,6 +760,72 @@
       font-weight: normal;
       line-height: 24px;
       margin-bottom: 0;
+    }
+  }
+}
+
+// order
+.order {
+  .order-scroll {
+    min-height: 500px;
+  }
+  .order-box {
+    padding: 10px;
+    border-radius: 6px;
+    position: relative;
+    border: solid 1px var(--very-light-pink-four);
+    background: var(--white-two) url('/static/icons/order-link-bg.svg') no-repeat right 10px center;
+    .order-img {
+      flex: 0 80px;
+      margin-right: 10px;
+      height: 80px;
+    }
+    .order-title {
+      line-height: 24px;
+      font-size: 16px;
+      font-weight: 800;
+      color: var(--greyish-brown);
+      margin-right: 34px;
+    }
+    .order-list {
+      height: 18px;
+      font-size: 12px;
+      margin-right: 34px;
+      color: var(--greyish-brown);
+    }
+    .order-price {
+      height: 20px;
+      font-size: 14px;
+      font-weight: 800;
+      margin-top: 5px;
+      margin-right: 34px;
+      text-align: right;
+      color: var(--greyish-brown);
+    }
+    .order-close {
+      width: 30px;
+      height: 30px;
+      position: absolute;
+      top: 0;
+      right: 0;
+    }
+  }
+  .order-info {
+    margin: 0 -20px;
+    padding: 10px 20px;
+    background-color: var(--white-two);
+    border-top: 1px solid var(--very-light-pink-two);
+    .flex {
+      font-size: 12px;
+      font-weight: 800;
+      text-align: left;
+      color: var(--very-light-pink);
+      &:nth-child(even) {
+        font-size: 18px;
+        font-weight: 800;
+        text-align: right;
+        color: var(--salmon);
+      }
     }
   }
 }
