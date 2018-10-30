@@ -52,8 +52,10 @@
         background-color: transparent !important;
       }
       .v-btn__content {
+        font-weight: 800;
+        font-size: 12px;
         > img {
-          margin-right: 2px;
+          margin-right: 3px;
         }
       }
     }
@@ -773,8 +775,13 @@
     padding: 10px;
     border-radius: 6px;
     position: relative;
+    box-shadow: none;
     border: solid 1px var(--very-light-pink-four);
     background: var(--white-two) url('/static/icons/order-link-bg.svg') no-repeat right 10px center;
+    margin-top: 10px;
+    &:first-child {
+      margin-top: 0;
+    }
     .order-img {
       flex: 0 80px;
       margin-right: 10px;

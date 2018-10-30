@@ -25,18 +25,25 @@
         ※ 예약 주문은 당일에만 가능합니다.
       </div>
       <div class="page-lay" style="margin-top: 50px;">
-        <v-btn class="page-btn">포장 주문 하기</v-btn>
+        <v-btn class="page-btn" @click="dialog = true">포장 주문 하기</v-btn>
       </div>
     </div>
+    <order-pop v-model="dialog"/>
   </div>
 </template>
 
 <script>
+import OrderPop from '@/components/popups/order'
+
 export default {
   name: 'Order',
+  components: {
+    OrderPop
+  },
   data() {
     return {
-      type: 'me'
+      type: 'me',
+      dialog: false
     }
   }
 }
