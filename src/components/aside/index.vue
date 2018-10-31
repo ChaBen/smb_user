@@ -10,7 +10,7 @@
         v-for="item in items"
         :key="item.title"
         :to="{ path: item.path }"
-        :class="{ active: pathActived(item.name) }"
+        :class="{ active: item.name === $route.name }"
         class="list-item">
         <v-list-tile-content>
           <v-list-tile-title>{{ item.title }}</v-list-tile-title>
@@ -46,11 +46,6 @@ export default {
         if (val === true) return
         this.$store.commit('TOGGLE_SIDEBAR')
       }
-    }
-  },
-  methods: {
-    pathActived(name) {
-      return name === this.$route.name
     }
   }
 }

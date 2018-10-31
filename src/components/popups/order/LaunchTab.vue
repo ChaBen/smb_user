@@ -10,8 +10,8 @@
 
     <div class="content order mt-0">
       <div class="order-scroll">
-        <v-card v-for="(item, key) in menus" :key="key" class="order-box">
-          <v-layout row align-center @click="dialog = true">
+        <v-card v-for="(item, key) in menus" :key="key" to="/menu/1" class="order-box">
+          <v-layout row align-center>
             <v-flex class="order-img">
               <v-img src="https://cdn.vuetifyjs.com/images/cards/halcyon.png" width="80px" contain />
             </v-flex>
@@ -23,18 +23,11 @@
         </v-card>
       </div>
     </div>
-
-    <menu-detail-pop v-model="dialog"/>
   </v-card>
 </template>
 
 <script>
-import MenuDetailPop from '@/components/popups/order/menu-detail'
-
 export default {
-  components: {
-    MenuDetailPop
-  },
   filters: {
     currency(value) {
       return value.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ',')
@@ -43,7 +36,6 @@ export default {
   data() {
     return {
       filter: 'BRUNCH',
-      dialog: false,
       menus: [
         { title: '신선한 랍스타 롤 & 크림 클램 차우더', price: '33000' },
         { title: '울프강 스테이크 샌드위치', price: '36000' },

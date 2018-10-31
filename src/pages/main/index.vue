@@ -1,5 +1,15 @@
 <template>
   <div>
+    <header class="main-header">
+      <div class="main-title">안녕하세요,<br>울프강 스테이크 하우스<br>입니다.</div>
+      <v-layout row justify-space-around class="main-menu">
+        <router-link v-for="item in menu" :key="item.title" :to="item.path" class="menu-item">
+          <div class="item-img"><img :src="`/static/icons/main-menu-${item.icon}.svg`" :alt="item.title"></div>
+          <div class="item-title">{{ item.title }}</div>
+        </router-link>
+      </v-layout>
+    </header>
+
     <v-list-tile v-for="item in mainList" :key="item.title" class="main-list">
       <template v-if="!item.whether">
         <v-list-tile-content>
@@ -34,6 +44,11 @@ export default {
   data() {
     return {
       dialog: false,
+      menu: [
+        { title: '이용 이력', icon: 'list', path: '' },
+        { title: '메뉴 정보', icon: 'info', path: '' },
+        { title: '매장 정보', icon: 'shop', path: '' }
+      ],
       mainList: [
         // { title: '지금 바로 예약하실 수 있습니다!', avatar: '예약하기', path: '', whether: true },
         { title: '곧 식사하실 예정이세요?', avatar: '대기표받기', path: '', whether: true },

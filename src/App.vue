@@ -3,7 +3,7 @@
 
     <smb-aside />
 
-    <smb-header :is-main="hasMain" />
+    <smb-header />
 
     <v-content>
       <v-container fluid pa-0>
@@ -28,11 +28,6 @@ export default {
   name: 'App',
   components: {
     SmbAside, SmbHeader, SmbFooter
-  },
-  computed: {
-    hasMain() {
-      return this.$route.name === 'Main'
-    }
   }
 }
 </script>

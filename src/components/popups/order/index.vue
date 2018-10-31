@@ -19,7 +19,7 @@
           <v-btn flat><img src="/static/icons/order-menu-goods.svg" alt="주문 요청">주문 요청</v-btn>
         </v-toolbar-items>
         <v-toolbar-items class="header-toolbar dialog">
-          <v-btn flat @click="dialog = true"><img src="/static/icons/order-menu-add.svg" alt="메뉴 추가 아이콘">메뉴 추가</v-btn>
+          <v-btn flat @click="dialog = true"><img src="/static/icons/add.svg" alt="메뉴 추가 아이콘">메뉴 추가</v-btn>
         </v-toolbar-items>
       </v-toolbar>
 

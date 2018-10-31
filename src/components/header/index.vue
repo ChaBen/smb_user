@@ -1,24 +1,15 @@
 <template>
   <div>
-    <v-toolbar :height="56" :class="{ 'main': isMain }" :fixed="!isMain" class="smb-header">
-      <v-btn flat icon @click="toogleSidebar">
-        <img src="/static/icons/side.svg" alt="">
+    <v-toolbar :height="56" :class="{ 'main': path === 'Main' }" :fixed="path !== 'Main'" class="smb-header">
+      <v-btn flat icon @click="menuEvent(icon)">
+        <img :src="`/static/icons/${icon}.svg`" alt="">
       </v-btn>
+      <v-toolbar-title v-if="title">{{ title }}</v-toolbar-title>
       <v-spacer />
       <v-toolbar-items class="header-toolbar">
-        <v-btn v-for="item in headMenu" :key="item.title" :to="item.path" flat @click="linkEvent(item.event)"><img :src="`/static/icons/${item.icon}.svg`" alt="">{{ item.title }}</v-btn>
+        <v-btn v-for="item in link" :key="item.title" :to="item.path" flat @click="linkEvent(item.event)"><img :src="`/static/icons/${item.icon}.svg`" alt="">{{ item.title }}</v-btn>
       </v-toolbar-items>
     </v-toolbar>
-
-    <header v-if="isMain" class="main-header">
-      <div class="main-title">안녕하세요,<br>울프강 스테이크 하우스<br>입니다.</div>
-      <v-layout row justify-space-around class="main-menu">
-        <router-link v-for="item in mainMenu" :key="item.title" :to="item.path" class="menu-item">
-          <div class="item-img"><img :src="`/static/icons/main-menu-${item.icon}.svg`" :alt="item.title"></div>
-          <div class="item-title">{{ item.title }}</div>
-        </router-link>
-      </v-layout>
-    </header>
 
     <share-popup :dialog.sync="dialog" />
     <notice-popup :dialog.sync="dialog1" />
@@ -34,31 +25,54 @@ export default {
   components: {
     SharePopup, NoticePopup
   },
-  props: {
-    isMain: {
-      type: Boolean,
-      default: false
-    }
-  },
   data() {
     return {
       dialog: false,
       dialog1: false,
-      headMenu: [
-        { title: '대기', icon: 'waiting', path: '/standby' },
-        { title: '예약', icon: 'reser', event: 'reser' },
-        { title: '공유', icon: 'share', event: 'share' }
-      ],
-      mainMenu: [
-        { title: '이용 이력', icon: 'list', path: '' },
-        { title: '메뉴 정보', icon: 'info', path: '' },
-        { title: '매장 정보', icon: 'shop', path: '' }
-      ]
+      links: {
+        Main: [
+          { title: '대기', icon: 'waiting', path: '/standby' },
+          { title: '예약', icon: 'reser', event: 'reser' },
+          { title: '공유', icon: 'share', event: 'share' }
+        ],
+        Order: [
+          { title: '메뉴 추가', icon: 'add', event: '' }
+        ]
+      }
+    }
+  },
+  computed: {
+    path() {
+      return this.$route.name
+    },
+    link() {
+      return this.links[this.$route.name] || this.links.Main
+    },
+    icon() {
+      return this.$route.meta.icon || 'aside'
+    },
+    title() {
+      return this.$route.meta.title || false
     }
   },
   methods: {
     toogleSidebar() {
       this.$store.commit('TOGGLE_SIDEBAR')
+    },
+    menuEvent(event) {
+      switch (event) {
+        case 'aside':
+          this.$store.commit('TOGGLE_SIDEBAR')
+          break
+        case 'close':
+
+          break
+        case 'back':
+
+          break
+        default:
+          break
+      }
     },
     linkEvent(event) {
       switch (event) {

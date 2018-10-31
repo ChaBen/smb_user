@@ -4,6 +4,7 @@ import Main from '@/pages/main'
 import Standby from '@/pages/standby'
 import Reservation from '@/pages/reservation'
 import Order from '@/pages/order'
+import MenuDetail from '@/pages/order/menu-detail'
 
 Vue.use(Router)
 
@@ -27,7 +28,13 @@ export default new Router({
     {
       path: '/order',
       name: 'Order',
+      meta: { icon: 'close', title: '포장 주문' },
       component: Order
+    },
+    {
+      path: '/menu/:id',
+      name: 'Menu',
+      component: MenuDetail
     }
   ]
 })
