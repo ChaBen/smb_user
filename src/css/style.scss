@@ -835,6 +835,32 @@
       }
     }
   }
+  .menu-item {
+    margin-top: 16px;
+    padding: 11px 0 12px 0;
+    border-top: 1px solid var(--very-light-pink-two);
+    border-bottom: 1px solid var(--very-light-pink-two);
+    .tit {
+      font-size: 16px;
+      font-weight: 800;
+      color: var(--black);
+    }
+    .txt {
+      font-size: 12px;
+      text-align: right;
+      color: var(--very-light-pink);
+    }
+  }
+  .menu-form {
+    .flex {
+      margin-bottom: 10px;
+    }
+    .v-btn {
+      margin: 0;
+      width: 40px;
+      height: 40px;
+    }
+  }
 }
 
 // footer

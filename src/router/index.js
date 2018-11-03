@@ -34,6 +34,7 @@ export default new Router({
     {
       path: '/menu/:id',
       name: 'Menu',
+      meta: { icon: 'back', title: '매뉴 상세 정보' },
       component: MenuDetail
     }
   ]

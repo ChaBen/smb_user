@@ -46,7 +46,7 @@ export default {
       return this.$route.name
     },
     link() {
-      return this.links[this.$route.name] || this.links.Main
+      return this.links[this.$route.name] || []
     },
     icon() {
       return this.$route.meta.icon || 'aside'
@@ -68,7 +68,7 @@ export default {
 
           break
         case 'back':
-
+          this.$router.go(-1)
           break
         default:
           break

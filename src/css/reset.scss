@@ -95,6 +95,7 @@
     }
     .v-text-field__details {
       min-height: 0;
+      margin-bottom: 0;
     }
   }
   .smb-radio {
@@ -204,6 +205,9 @@
     text-align: center;
     color: var(--charcoal-grey);
     margin-bottom: 0;
+    &.tal {
+      text-align: left;
+    }
   }
   .smb-text {
     font-size: 14px;
@@ -211,6 +215,9 @@
     text-align: center;
     color: var(--greyish-brown);
     margin-bottom: 0;
+    &.tal {
+      text-align: left;
+    }
   }
   .smb-txt {
     font-size: 12px;
@@ -258,11 +265,24 @@
       .v-btn__content {
         color: var(--brown-grey);
       }
-      &.v-carousel__controls__item--active {
-        .v-btn__content {
-          opacity: 0.8;
-          border: solid 1px var(--brown-grey);
+      .v-carousel__controls__item--active {
+        &.v-btn--icon {
+          opacity: 1;
           color: rgba(255, 255, 255, 0.5);
+          .v-icon {
+            opacity: 1 !important;
+            font-size: 11px !important;
+            color: var(--white-two) !important;
+          }
+        }
+      }
+      .v-btn--icon {
+        width: 12px;
+        height: 12px;
+        margin: 0 !important;
+        .v-icon {
+          opacity: 1 !important;
+          font-size: 12px !important;
         }
       }
     }
@@ -271,5 +291,12 @@
     margin-left: 0;
     font-size: 18px;
     font-weight: 800;
+  }
+  .smb-price {
+    font-size: 24px;
+    font-weight: 800;
+    text-align: right;
+    color: var(--salmon);
+    margin-top: 6px;
   }
 }
