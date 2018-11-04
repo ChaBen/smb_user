@@ -30,14 +30,14 @@
           </v-layout>
           <v-layout column class="order-cont">
             <v-flex class="info-dd" style="margin-bottom: 10px;">주문내역</v-flex>
-            <div v-for="item in orders" :key="item.title">
-              <v-flex class="order-title">{{ item.title }}</v-flex>
+            <template v-for="item in orders">
+              <v-flex :key="item.title" class="order-title">{{ item.title }}</v-flex>
               <v-layout v-for="o in item.child" :key="o.title" row wrap align-center>
                 <v-flex class="order-label">- {{ o.title }}</v-flex>
                 <v-flex class="order-length">x {{ o.length }}</v-flex>
-                <v-flex class="order-price">{{ o.price }}</v-flex>
+                <v-flex class="order-price">{{ o.price | currency }}원</v-flex>
               </v-layout>
-            </div>
+            </template>
           </v-layout>
         </div>
       </div>
@@ -47,6 +47,11 @@
 
 <script>
 export default {
+  filters: {
+    currency(value) {
+      return value.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ',')
+    }
+  },
   props: {
     dialog: {
       type: Boolean,
@@ -60,15 +65,15 @@ export default {
         {
           title: '리코타 치즈 샐러드',
           child: [
-            { title: '블루베리 드레싱', length: 1, price: '25,000' },
-            { title: '올리브 X', length: 3, price: '75,000' }
+            { title: '블루베리 드레싱', length: 1, price: '25000' },
+            { title: '올리브 X', length: 3, price: '75000' }
           ]
         },
         {
           title: '울프강 스테이크 샌드위치',
           child: [
-            { title: '미디움 레어', length: 1, price: '36,000' },
-            { title: '미디움 웰던', length: 2, price: '72,000' }
+            { title: '미디움 레어', length: 1, price: '36000' },
+            { title: '미디움 웰던', length: 2, price: '72000' }
           ]
         }
       ]

@@ -37,6 +37,14 @@ export default {
         ],
         Order: [
           { title: '메뉴 추가', icon: 'add', event: '' }
+        ],
+        OrderChange: [
+          { title: '메뉴 추가', icon: 'add', event: '' }
+        ],
+        TakeoutList: [
+          { title: '대기', icon: 'waiting', path: '/standby' },
+          { title: '예약', icon: 'reser', event: 'reser' },
+          { title: '공유', icon: 'share', event: 'share' }
         ]
       }
     }
@@ -46,6 +54,7 @@ export default {
       return this.$route.name
     },
     link() {
+      console.log(this.$route.name)
       return this.links[this.$route.name] || []
     },
     icon() {

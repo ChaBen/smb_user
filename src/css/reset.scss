@@ -299,4 +299,38 @@
     color: var(--salmon);
     margin-top: 6px;
   }
+  .page-title {
+    font-size: 16px;
+    font-weight: 800;
+    &.take {
+      padding: 10px 0;
+    }
+    .layout {
+      .flex {
+        font-size: 12px;
+        font-weight: 800;
+        color: var(--greyish-brown);
+      }
+    }
+    .flex {
+      height: 22px;
+      line-height: 22px;
+      vertical-align: top;
+      color: var(--black);
+      img {
+        margin-right: 4px;
+      }
+    }
+  }
+  .full-smb-title {
+    margin: -20px -20px 0 -20px;
+    padding: 0 20px;
+    height: 30px;
+    background-color: var(--charcoal-grey);
+    .flex {
+      font-size: 12px;
+      font-weight: 800;
+      color: var(--white-two);
+    }
+  }
 }

@@ -44,20 +44,20 @@ smb_user:
     ✔ 4 path: @/components/popups/common/order/index.vue @done(18-10-25 22:42)
     ✔ 5 path: @/components/popups/common/order/menu-add.vue @done(18-10-30 22:28)
     ✔ 6 path: @/components/popups/common/order/menu-detail.vue @2h @done(18-11-04 05:40)
-    ☐ 7
-    ☐ 8
-    ☐ 9
-    ☐ 10
-    ☐ 11
-    ☐ 12
+    ✔ 7 @done(18-11-05 02:41)
+    ✔ 8 @done(18-11-05 02:41)
+    ✔ 9 @done(18-11-05 02:41)
+    ✔ 10 @done(18-11-05 02:41)
+    ✔ 11 @done(18-11-05 02:41)
+    ✔ 12 @done(18-11-05 02:41)
   05-이용이력:
-    ☐ 1
-    ☐ 2
-    ☐ 3
-    ☐ 4
-    ☐ 5
-    ☐ 6
-    ☐ 7
+    ✔ 1 @done(18-11-05 02:41)
+    ✔ 2 @done(18-11-05 02:41)
+    ✔ 3 @done(18-11-05 02:41)
+    ✔ 4 @done(18-11-05 02:41)
+    ✔ 5 @done(18-11-05 02:41)
+    ✔ 6 @done(18-11-05 02:41)
+    ✔ 7 @done(18-11-05 02:41)
     ☐ 8
   06-메뉴:
     ☐ 1
