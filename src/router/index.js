@@ -12,7 +12,10 @@ import TakeoutDetail from '@/pages/takeout/takeout-detail'
 import TakeoutComplete from '@/pages/takeout/takeout-complete'
 import TakeoutPaymentComplete from '@/pages/takeout/takeout-payment-complete'
 import TakeoutList from '@/pages/takeout/takeout-list'
+import Menus from '@/pages/menus'
 import MenuDetail from '@/pages/order/menu-detail'
+import Shop from '@/pages/shop'
+import Map from '@/pages/shop/map'
 
 Vue.use(Router)
 
@@ -89,10 +92,28 @@ export default new Router({
       component: TakeoutList
     },
     {
+      path: '/menus',
+      name: 'Menus',
+      meta: { icon: 'aside', title: '메뉴' },
+      component: Menus
+    },
+    {
       path: '/menu/:id',
       name: 'MenuDetail',
       meta: { icon: 'back', title: '매뉴 상세 정보' },
       component: MenuDetail
+    },
+    {
+      path: '/shop',
+      name: 'Shop',
+      meta: { icon: 'aside', title: '매장' },
+      component: Shop
+    },
+    {
+      path: '/shop/map',
+      name: 'Map',
+      meta: { icon: 'back', title: '지도보기' },
+      component: Map
     }
   ]
 })

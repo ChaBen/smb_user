@@ -45,6 +45,16 @@ export default {
           { title: '대기', icon: 'waiting', path: '/standby' },
           { title: '예약', icon: 'reser', event: 'reser' },
           { title: '공유', icon: 'share', event: 'share' }
+        ],
+        Menus: [
+          { title: '대기', icon: 'waiting', path: '/standby' },
+          { title: '예약', icon: 'reser', event: 'reser' },
+          { title: '공유', icon: 'share', event: 'share' }
+        ],
+        Shop: [
+          { title: '대기', icon: 'waiting', path: '/standby' },
+          { title: '예약', icon: 'reser', event: 'reser' },
+          { title: '공유', icon: 'share', event: 'share' }
         ]
       }
     }

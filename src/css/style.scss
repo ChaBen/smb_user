@@ -800,8 +800,76 @@
 
 // order
 .order {
+  &.scroll-x {
+    overflow-x: auto;
+  }
   .order-scroll {
     min-height: 500px;
+    > .layout {
+      > .flex {
+        margin-bottom: 10px;
+      }
+    }
+    > .column {
+      .row {
+        .order-price {
+          justify-content: flex-end;
+        }
+      }
+    }
+    > .row {
+      .order-img {
+        margin-right: 0;
+      }
+      .order-price {
+        justify-content: center;
+      }
+    }
+    .BRUNCH {
+      margin: -5px -5px -5px -5px;
+      > .flex {
+        padding: 5px;
+      }
+      .order-title {
+        font-size: 14px;
+        text-align: center;
+        margin-top: 13px;
+        margin-right: 0;
+        color: var(--black);
+      }
+      .order-price {
+        font-size: 12px;
+        text-align: center;
+        margin-right: 0;
+        color: var(--greyish-brown);
+      }
+    }
+    .STEAK {
+      .order-title {
+        font-size: 14px;
+        font-weight: 800;
+        line-height: 20px;
+        height: 30px;
+        color: var(--black);
+        margin-top: 13px;
+        margin-right: 0;
+        justify-content: center;
+      }
+      .order-img {
+        margin-right: 0;
+      }
+      .order-box {
+        width: calc(100vw - 60px);
+        margin-right: 10px;
+      }
+      .order-price {
+        font-size: 12px;
+        justify-content: center;
+        color: var(--greyish-brown);
+        margin-right: 0;
+        margin-top: 0;
+      }
+    }
   }
   .order-box {
     padding: 10px;
@@ -817,9 +885,10 @@
     .order-img {
       flex: 0 80px;
       margin-right: 10px;
-      height: 80px;
+      flex-shrink: 0;
     }
     .order-title {
+      display: flex;
       line-height: 24px;
       font-size: 16px;
       font-weight: 800;
@@ -833,12 +902,12 @@
       color: var(--greyish-brown);
     }
     .order-price {
+      display: flex;
       height: 20px;
       font-size: 14px;
       font-weight: 800;
       margin-top: 5px;
       margin-right: 34px;
-      text-align: right;
       color: var(--greyish-brown);
     }
     .order-close {
@@ -909,6 +978,41 @@
       margin: 0;
       width: 40px;
       height: 40px;
+    }
+  }
+}
+
+// shop
+.shop-list {
+  margin-top: 20px;
+  padding-top: 20px;
+  border-top: 1px solid var(--very-light-pink-two);
+  &.bt-0 {
+    border-top: 0;
+    margin-top: 0;
+    padding-top: 0;
+  }
+  .flex {
+    font-size: 12px;
+    line-height: 2;
+    color: var(--very-light-pink);
+    text-align: right;
+    &:nth-child(odd) {
+      font-size: 16px;
+      line-height: 1.75;
+      font-weight: 800;
+      color: var(--black);
+      text-align: left;
+    }
+    .shop-icon {
+      display: inline-block;
+      min-width: 113px;
+      font-size: 12px;
+      vertical-align: middle;
+     img {
+       margin-right: 6px;
+       vertical-align: middle;
+     }
     }
   }
 }

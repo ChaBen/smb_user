@@ -32,8 +32,8 @@ export default {
         { title: '주문', name: 'Order', path: '/order' }, // 임시?
         { title: '대기', name: 'Standby', path: '/standby' },
         { title: '포장', name: '', path: '/' },
-        { title: '메뉴', name: '', path: '/' },
-        { title: '매장', name: '', path: '/' }
+        { title: '메뉴', name: 'Menus', path: '/menus' },
+        { title: '매장', name: 'Shop', path: '/shop' }
       ]
     }
   },
