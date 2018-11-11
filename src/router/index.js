@@ -13,9 +13,14 @@ import TakeoutComplete from '@/pages/takeout/takeout-complete'
 import TakeoutPaymentComplete from '@/pages/takeout/takeout-payment-complete'
 import TakeoutList from '@/pages/takeout/takeout-list'
 import Menus from '@/pages/menus'
-import MenuDetail from '@/pages/order/menu-detail'
+import MenuDetail from '@/pages/menus/menu-detail'
 import Shop from '@/pages/shop'
 import Map from '@/pages/shop/map'
+import Confirm from '@/pages/confirm'
+import ConfirmAdd from '@/pages/confirm/confirm-add'
+import ConfirmChange from '@/pages/confirm/confirm-change'
+import ConfirmSms from '@/pages/confirm/confirm-sms'
+import ConfirmCertify from '@/pages/confirm/confirm-certify'
 
 Vue.use(Router)
 
@@ -98,7 +103,7 @@ export default new Router({
       component: Menus
     },
     {
-      path: '/menu/:id',
+      path: '/menus/:id',
       name: 'MenuDetail',
       meta: { icon: 'back', title: '매뉴 상세 정보' },
       component: MenuDetail
@@ -114,6 +119,36 @@ export default new Router({
       name: 'Map',
       meta: { icon: 'back', title: '지도보기' },
       component: Map
+    },
+    {
+      path: '/confirm',
+      name: 'Confirm',
+      meta: { icon: 'close', title: '고객 인증' },
+      component: Confirm
+    },
+    {
+      path: '/confirm/add',
+      name: 'ConfirmAdd',
+      meta: { icon: 'back', title: '나의 정보 등록' },
+      component: ConfirmAdd
+    },
+    {
+      path: '/confirm/change',
+      name: 'ConfirmChange',
+      meta: { icon: 'back', title: '휴대폰번호 변경' },
+      component: ConfirmChange
+    },
+    {
+      path: '/confirm/sms',
+      name: 'ConfirmSms',
+      meta: { icon: 'back', title: '인증 번호 입력' },
+      component: ConfirmSms
+    },
+    {
+      path: '/confirm/certify',
+      name: 'ConfirmCertify',
+      meta: { icon: 'back', title: '실명 인증' },
+      component: ConfirmCertify
     }
   ]
 })

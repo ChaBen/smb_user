@@ -1,7 +1,5 @@
 이슈:
   ✔ popupmngr 팝업매니저가 없어도 가능하다? @done(18-10-15 23:04)
-  ☐ md-eslint install
-  ☐ jsconfig.json
   ☐ zeplin 에 import 안된 이미지들이 많음
   ☐ v-form input error시 어떻게 표현할지 현재 input 디자인 위아래붙어있는 상황이라서 vuetify식 error표현이 안됨
   ☐ 레이어 팝업, 풀팝업일 경우 타이틀(고정되여야하는지), footer(있어야하는지) 타이틀 고정아닐경우 닫기 버튼이 안보임
@@ -60,18 +58,18 @@ smb_user:
     ✔ 7 @done(18-11-05 02:41)
     ✔ 8 @done(18-11-09 23:12)
   06-메뉴:
-    ✔ 1 @done(18-11-09 23:12)
-    ✔ 2 @done(18-11-09 23:12)
-    ✔ 3 @done(18-11-09 23:12)
-    ✔ 4 @done(18-11-09 23:12)
-    ✔ 5 @done(18-11-09 23:12)
-    ✔ 6 @done(18-11-09 23:12)
+    ✔ 메뉴 @/pages/menus/index.vue @done(18-11-09 23:12)
+    ✔ 메뉴 @/pages/menus/index.vue @done(18-11-09 23:12)
+    ✔ 메뉴 @/pages/menus/index.vue @done(18-11-09 23:12)
+    ✔ 메뉴 @/pages/menus/index.vue @done(18-11-09 23:12)
+    ✔ 메뉴 상세 정보 @/pages/menus/menu-detail @done(18-11-09 23:12)
+    ✔ 메뉴 상세 정보 @/pages/menus/menu-detail @done(18-11-09 23:12)
   07-매장:
-    ✔ 1 @done(18-11-09 23:12)
-    ✔ 2 @done(18-11-09 23:12)
+    ✔ 매장 - @/pages/shop/index.vue @done(18-11-09 23:12)
+    ✔ 지도보기 - @/pages/shop/map.vue @done(18-11-09 23:12)
   08-인증:
-    ☐ 1
-    ☐ 2
-    ☐ 3
-    ☐ 4
-    ☐ 5
+    ✔ 고객인증 - @/pages/confirm/index.vue @done(18-11-11 16:22)
+    ✔ 나의 정보 등록 - @/pages/confirm/index.vue @done(18-11-11 16:22)
+    ✔ 휴대폰번호 변경 - @/pages/confirm/confirm-change.vue @done(18-11-11 16:22)
+    ✔ 인증 번호 입력 - @/pages/confirm/confirm-sms.vue @done(18-11-11 16:22)
+    ✔ 실명인증 - @/pages/confirm/confirm-certify.vue @done(18-11-11 16:22)

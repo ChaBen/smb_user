@@ -204,11 +204,20 @@
   .p-0 {
     padding: 0;
   }
+  .pt-10 {
+    padding-top: 10px;
+  }
+  .pt-15 {
+    padding-top: 15px;
+  }
   .pt-20 {
     padding-top: 20px;
   }
   .pb-20 {
     padding-bottom: 20px;
+  }
+  .bt-1 {
+    border-top: 1px solid var(--very-light-pink-two);
   }
   .smb-title {
     font-size: 16px;
@@ -357,5 +366,13 @@
   }
   #map {
     min-height: 360px;
+  }
+  .ui-box {
+    font-size: 14px;
+    height: 272px;
+    color: var(--greyish-brown);
+    border-radius: 8px;
+    background-color: var(--very-light-pink-two);
+    text-align: center;
   }
 }
